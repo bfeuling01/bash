@@ -1,8 +1,11 @@
 #!/bin/bash
+
 ###############################################
+# ABOUT: Permissions Granting
 # DESCRIPTION: Gives Network Permissions
 #              and Printer Permissions to
 #              everyone
+# NOTES: Created by Bryan Feuling
 ###############################################
 
 # Grant System Pane Preferences permissions
@@ -17,3 +20,13 @@ sudo /usr/sbin/dseditgroup -o edit -n /Local/Default -a everyone -t group _lpadm
 # Grant Network Pane permissions
 sudo /usr/bin/security authorizationdb write system.preferences.network allow
 sudo /usr/bin/security authorizationdb write system.services.systemconfiguration.network allow
+
+# Grant Date/Time permissions
+/usr/bin/security authorizationdb write system.preferences allow
+/usr/bin/security authorizationdb write system.preferences.datetime allow
+
+# Grant Energy Saver permissions
+/usr/bin/security authorizationdb write system.preferences allow
+/usr/bin/security authorizationdb write system.preferences.energysaver allow
+
+exit 0
