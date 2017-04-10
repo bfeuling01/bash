@@ -1,5 +1,5 @@
 #!/bin/bash
-## postinstall
+## Created by Bryan Feuling and Sean Boult
 
 LoggedInUser=$(/bin/ls -l /dev/console | /usr/bin/awk '{ print $3 }')
 AgentDir="/Users/$LoggedInUser/Library/LaunchAgents"
