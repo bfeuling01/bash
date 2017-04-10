@@ -1,3 +1,4 @@
+--- Configured by Bryan Feuling and Sean Boult
 --- Modified version of TalkingMoose Script
 
 -- prevent the script running twice?
