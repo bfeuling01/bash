@@ -1,3 +1,5 @@
+--- Modified version of TalkingMoose Script
+
 -- prevent the script running twice?
 
 tell application "Finder"
@@ -14,7 +16,7 @@ property useKerberos : false
 -- Set this to true only if Macs in your environment are bound
 -- to Active Directory and your network is properly configured.
 
-property ExchangeServer : "owa.mail.ti.com"
+property ExchangeServer : "ServerName"
 -- Address of your organization's Exchange server.
 
 property ExchangeServerRequiresSSL : true
@@ -63,7 +65,7 @@ property getUserInformationFromActiveDirectory : false
 
 --------------- For non Active Directory users ---------------
 
-property domainName : "ti.com"
+property domainName : "DomainName"
 -- Complete this only if not using Active Directory to get user information.
 -- The part of your organization's email address following the @ symbol.
 
