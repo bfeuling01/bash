@@ -1,12 +1,11 @@
 #!/bin/bash
 
-###############################################
+###################################################
 # ABOUT: Permissions Granting
 # DESCRIPTION: Gives Network Permissions
-#              and Printer Permissions to
-#              everyone
+#              and Printer Permissions to everyone
 # NOTES: Created by Bryan Feuling
-###############################################
+####################################################
 
 # Grant System Pane Preferences permissions
 sudo /usr/bin/security authorizationdb write system.preferences allow
